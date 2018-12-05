@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSP v6</title>
+        <meta charset="utf-8" />
+</head>
+<body>
+    <h1>CSP v6</h1>
+    <ul><li>client: HR/IS&T
+    </li><li>role: UX Designer
+    </li><li>deliverables: wireframes 
+    </li><li>tags: UI
+    </li><li>stage: middle stage 
+    </li><li>when: summer 2018
+    </li></ul>
+
+<h2>Background</h2>
+<p>Child Scholarship Plan (CSP) is a tuition reimbursement benefit MIT provides to eligible employees. <a href="http://hr.mit.edu/benefits/csp">Children’s Scholarship Plan | Human Resources at MIT</a> The purpose of this project was to digitize the existing paper enrollment process and replace the outdated benefit management system (Filemaker).</p>
+<figure>
+    <img src='images/CSP/filemaker_screenshot.png'>
+    <figcaption>The original system was a Filemaker application</figcaption>
+</figure>
+
+<h2>My Role</h2>
+<p>Though both employees and administrators interface with the system, my focus was on designing the UI for administrative-side of the system.</p>
+
+<h2>Process</h2>
+<h3>Challenge 1: Getting up to speed</h3>
+<p>Once I had a general understanding of how the benefit process worked, my next step was to make a list of the objects that needed to be represented in the system and their components, actions the user wants to take on each object, and potential states and statuses of each object. </p>
+<p>This exercise not only reinforced my understanding of the system but helped surface things that were unclear. </p>
+
+<p><img src='CSP%20v6/35B7113A-E59D-408B-A828-EFC9C44DAFBF.png'></p>
+<p><i>The main object of the system was the benefit application.</i></p>
+
+<p>Next, I took the main objects (employee, student, application) and sketched out their relationships which served as a foundation for the design. From there there I began layering on additional views (detail-view, list-view) that corresponded to tasks the user needed to accomplish. </p>
+<figure>
+    <img src='images/CSP/system_sketch.jpg'>
+</figure>
+
+
+<h3>Challenge 2: Where are the wireframes?!</h3>
+<p>When I joined the team, the project was behind schedule and there was pressure to quickly produce wireframes despite it being unclear how the new system would impact the existing business process. </p>
+<p>Because I knew what the system objects were, I started by sketching out each object using the output from the previous exercise a guideline. I treated each object as a stand-alone component; I didn’t know what the final configuration/arrangement of these components would be but I knew that no matter what, the component would be present in the system. </p>
+<figure>
+    <img src='images/CSP/claim_sketch.jpg'>
+    <figcaption>I knew that there would be a “claim” object in the system.</figcaption>
+</figure>
+<p>This “inside-out method” proved to be an effective way of demonstrating that progress was being made without wireframing screens or knowing how everything was going to come together. </p>
+
+<h3>Challenge 3: Making Sense of it All</h3>
+<p>While I focused on designing the admin-side of the system, my colleague was designing the employee-facing side. Though we were designing for different end users, the UIs were interconnected; a change on the employee-side could affect the admin-side and vice versa. Therefore, we had to make sure that our designs would properly accommodate for tasks that traversed both UIs. </p>
+<figure>
+    <img src='images/CSP/wireframe_walkthrough.jpg'>
+    <figcaption>The back-end engineers and business analyst review the wireframe workflow.</figcaption>
+</figure>
+<h4>Approach</h4>
+<p>In order to get the team thinking about the wireframes holistically, I taped printouts of each wireframe (employee and admin) onto a large wall and organized an end-to-end walk through of all the activities that occur during the life-cycle of a benefit .</p>
+<h4>Result</h4>
+<p>I was astonished by how the team embraced the walk through. </p>
+<p><mark>Unlike the weekly wireframe meetings, the team seem more engaged and began asking more critical questions and identifying issues.</mark></p>
+
+<h2>Deliverables</h2>
+<p>At the heart of the system is the “claim” which defines how much money each employee will receive and when. Below are three case studies that demonstrate how the claim’s design evolved throughout the project. </p>
+
+<h3>Case Study 1</h3>
+<p>In the previous system, the benefit amount each applicant is eligible for is calculated by the administrator.  The new system calculates this value automatically.  </p>
+<h4>First Iteration</h4>
+<p>Based on the end user’s lengthy experience with administering benefits, my initial design relegated the calculation explanation to an information icon (A). </p>
+<img src='CSP%20v6/9B5AF2BE-5649-4942-B9F3-332448D17AEB.png'>
+<p>However, as the project continued, I became aware of unique cases (e.g., non-USD tuition for foreign universities) that added complexity to the benefit calculation. A tooltip, which is usually used for short descriptions, was not the ideal format to communicate this complexity. </p>
+<h4>Show, Don’t Tell</h4>
+<p>In this design, the benefit explanation is stored in a vertical drawer that is accessible via the “show calculation” (A) button. Rather than just provide a generic description of the calculation, the additional space allowed me to show each step of the calculation using actual values. By seeing every step, the user can be confident in the validity of the final value. </p>
+<img src='CSP%20v6/A6AF2219-A7AB-486A-BB51-2A8412CE3FBF.png'>
+<img src='CSP%20v6/0C415C6F-6976-4919-AF8E-692F97DE80B8.png'> 
+
+<h3>Case Study 2</h3>
+<p>In the initial design, the UI displayed the system-calculated benefit (SCB) as well as how that benefit would be paid-out through the year. </p>
+<h4>First Iteration</h4>
+<img src='CSP%20v6/4D6F87B6-E0E8-4A22-A4B6-23F0779C347F.png'>
+<h4>Issue</h4>
+<p>Though the payment amounts (A) were editable, the recommended SCB (A) was not. The team was concerned that this would confuse the user and proposed that the SCB be automatically updated if the payment amounts were changed. When that proved to be confusing, they suggested using a warning banner to explain that the SCB did not take into account manual overrides. </p>
+<p>These solutions assumed that the problem was the SCB. However, the problem was that the UI did not provide the information needed for the user to confidently override a system calculated value. </p>
+<h4>Side-By-Side Comparison</h4>
+<p>In order to clearly communicate the consequence of updating an individual payment on the total sum, a second column tallying the manual inputted values was included alongside the system-calculated values. </p>
+<p>By showing both the system-calculated benefit side-by-side with the benefit amount based on a manual override, the user has a clearer picture</p>
+<figure>
+    <img src='CSP%20v6/DA59011A-95E6-48DA-9B5F-6C39ABE88A15.png'>
+    <figcaption>Each column has an active state which visually highlights the relationship between the parts and the total while also separating the manual vs. calculated values.</figcaption>
+</figure>
+
+<h3>Case Study 3</h3>
+<p>Another use case that needed to be addressed was if a benefit recipient changed schools.  Because the existing system did not allow for changes to approved applications, payments had to be manually updated in the database. The team envisioned that once a “change form” was approved in the new system, payments would be automatically updated. </p>
+<h4>First Iteration</h4>
+<p>Since most of the work associated with processing a change form was offloaded onto the system, there wasn’t much difference between how an administrator processed a new form vs. a change form. Therefore, the claim section of a change form was based on the new application form.</p>
+<img src='CSP%20v6/B4D1AAB3-5ADA-4255-A9F4-E854E37F8922.png'>
+<p>However, by approving a “change form”, the administrator was not only creating a new payment but also cancelling any previously scheduled payments. This consequence was not visible in the UI and therefore a potential source of confusion for anyone unfamiliar with the system. </p>
+<h4>Iteration 2</h4>
+<p>This design better facilitates decision-making by indicating the direct and indirect consequences of approving a form. In the example below, color is used to indicate what will happen to each claim payment if this application is approved. </p>
+<ul><li>	White (A): This claim has already been paid and will be unaffected.
+</li><li>	Red (A): This payment will be canceled.
+</li><li>	Green (A): This payment will be added.
+</li></ul>
+
+<p>In addition, showing both the original and changed payments makes it clear that these claims are associated with the same benefit.</p>
+<img src='CSP%20v6/204AF62F-8CF7-4C26-B70D-DD864B4D3F1F.png'>
+</body>
+</html>
