@@ -1,2 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.article--container {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.article--title {
+    font-size: 40px;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto';
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+p {
+    line-height: 1.8;
+    color: #4A4A4A;
+    font-size: 16px;
+}
+
+figure {
+    margin: 0;
+}
+
+article img {
+    width: 700px;
+    object-fit: contain;
+}
+
+article > section {
+    margin-bottom: 50px;
+} 
 
 
