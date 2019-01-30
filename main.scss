@@ -1,1 +1,99 @@
+$primary-color: #33393f;
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.article--container {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.article--title {
+    font-size: 40px;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto';
+    // color: $primary-color;
+    color: red;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+p {
+    line-height: 1.8;
+    color: #33393f;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 16px;
+    color: #4A4A4A;
+}
+
+article img {
+    width: 700px;
+    object-fit: contain;
+}
+
+article > section {
+    margin: 50px 0;
+} 
+
+.annotation {
+    color: #E82C0C;
+}
+
+
+h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+}
+
+h4 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+hr {
+    border-top: 1px dotted #8c8b8b;
+}
+
+.article--details {
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    top: 200px;  //#todo replace with navbar height
+}
+
+.fa-check-circle {
+    // color: #3C7B44;
+    color: #1d9d74;
+}
 
