@@ -3,8 +3,9 @@
 <head>
     <title>CSP</title>
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
     <nav>
@@ -13,20 +14,23 @@
         </ul>
     </nav>
     <article class="article--container">
-        <h1 class="article--title">Child Scholarship Plan</h1>
-        <ul><li>client: HR/IS&T
+        <h1 class="article--title">Child Scholarship md</h1>
+        
+        <ul class="article--details"><li>client: HR/IS&T
         </li><li>role: UX Designer
         </li><li>deliverables: wireframes 
         </li><li>tags: UI
         </li><li>stage: middle stage 
         </li><li>when: summer 2018
         </li></ul>
+
         <section>
             <h2>Background</h2>
-            <p>Child Scholarship Plan (CSP) is a tuition reimbursement benefit MIT provides to eligible employees. <a href="http://hr.mit.edu/benefits/csp">Children’s Scholarship Plan | Human Resources at MIT</a> The purpose of this project was to digitize the existing paper enrollment process and replace the outdated benefit management system (Filemaker).</p>
+            <p><a href="http://hr.mit.edu/benefits/csp">Child Scholarship Plan (CSP)</a>
+                 is a tuition reimbursement benefit MIT provides to eligible employees. The purpose of this project was to digitize the existing paper enrollment process and replace the outdated benefit management system (Filemaker).</p>
             <figure>
                 <img src='images/CSP/filemaker_screenshot.png'>
-                <figcaption> The original system was a Filemaker application</figcaption>
+<!--                 <figcaption> The original system was a Filemaker application</figcaption> -->
             </figure>
         </section>
         <section>
@@ -41,8 +45,8 @@
                 <p>Once I had a general understanding of how the benefit process worked, my next step was to make a list of the objects that needed to be represented in the system and their components, actions the user wants to take on each object, and potential states and statuses of each object. </p>
                 <p>This exercise not only reinforced my understanding of the system but helped surface things that were unclear. </p>
                 <figure>
-                    <img src='CSP%20v6/35B7113A-E59D-408B-A828-EFC9C44DAFBF.png'>
-                    <figcaption> The main object of the system was the benefit application.</figcaption>
+                    <img src='images/CSP/application_ooux.png'>
+                    <!-- <figcaption> The main object of the system was the benefit application.</figcaption> -->
                 </figure>
                 <p>Next, I took the main objects (employee, student, application) and sketched out their relationships which served as a foundation for the design. From there there I began layering on additional views (detail-view, list-view) that corresponded to tasks the user needed to accomplish. </p>
                 <figure>
@@ -52,10 +56,10 @@
             <section>
                 <h3>Challenge 2: Where are the wireframes?!</h3>
                 <p>When I joined the team, the project was behind schedule and there was pressure to quickly produce wireframes despite it being unclear how the new system would impact the existing business process. </p>
-                <p>Because I knew what the system objects were, I started by sketching out each object using the output from the previous exercise a guideline. I treated each object as a stand-alone component; I didn’t know what the final configuration/arrangement of these components would be but I knew that no matter what, the component would be present in the system. </p>
+                <p>Because I knew what the system objects were, I started by sketching out each object using the output from the previous exercise as a guideline. I treated each object as a stand-alone component; I didn’t know what the final configuration/arrangement of these components would be but I knew that no matter what, the component would be present in the system. </p>
                 <figure>
                     <img src='images/CSP/claim_sketch.jpg'>
-                    <figcaption>I knew that there would be a “claim” object in the system.</figcaption>
+                    <!-- <figcaption>I knew that there would be a “claim” object in the system.</figcaption> -->
                 </figure>
                 <p>This “inside-out method” proved to be an effective way of demonstrating that progress was being made without wireframing screens or knowing how everything was going to come together. </p>
             </section>
@@ -64,14 +68,10 @@
                 <p>While I focused on designing the admin-side of the system, my colleague was designing the employee-facing side. Though we were designing for different end users, the UIs were interconnected; a change on the employee-side could affect the admin-side and vice versa. Therefore, we had to make sure that our designs would properly accommodate for tasks that traversed both UIs. </p>
                 <figure>
                     <img src='images/CSP/wireframe_walkthrough.jpg'>
-                    <figcaption>The back-end engineers and business analyst review the wireframe workflow.</figcaption>
+                    <!-- <figcaption>The back-end engineers and business analyst review the wireframe workflow.</figcaption> -->
                 </figure>
                 <section>
-                    <h4>Approach</h4>
-                    <p>In order to get the team thinking about the wireframes holistically, I taped printouts of each wireframe (employee and admin) onto a large wall and organized an end-to-end walk through of all the activities that occur during the life-cycle of a benefit .</p>
-                </section>
-                <section>
-                    <h4>Result</h4>
+                     <p>In order to get the team thinking about the wireframes holistically, I taped printouts of each wireframe (employee and admin) onto a large wall and organized an end-to-end walk through of all the activities that occur during the life-cycle of a benefit.</p>
                     <p>I was astonished by how the team embraced the walk through. </p>
                     <p><mark>Unlike the weekly wireframe meetings, the team seem more engaged and began asking more critical questions and identifying issues.</mark></p>
                 </section>
@@ -86,7 +86,9 @@
                 <p>In the previous system, the benefit amount each applicant is eligible for is calculated by the administrator.  The new system calculates this value automatically.  </p>
                 <h4>First Iteration</h4>
                 <p>Based on the end user’s lengthy experience with administering benefits, my initial design relegated the calculation explanation to an information icon <span class="annotation">(1)</span>. </p>
+        
                 <figure>
+                    <i class="fa fa-check-circle fa-lg" aria-hidden="true"></i>
                     <img src='images/CSP/claim_info_icon.png'>
                 </figure>
                 <p>However, as the project continued, I became aware of unique cases (e.g., non-USD tuition for foreign universities) that added complexity to the benefit calculation. A tooltip, which is usually used for short descriptions, was not the ideal format to communicate this complexity. </p>
@@ -94,11 +96,12 @@
                 <p>In this design, the benefit explanation is stored in a vertical drawer that is accessible via the “show calculation” <span class="annotation">(2)</span> button. Rather than just provide a generic description of the calculation, the additional space allowed me to show each step of the calculation using actual values. By seeing every step, the user can be confident in the validity of the final value. </p>
                 <figure>
                     <img src='images/CSP/claim_show_calculation.png'>
-                    <img src='CSP%20v6/0C415C6F-6976-4919-AF8E-692F97DE80B8.png'> 
+                    <img src='images/CSP/calculation_slide_out.jpg'> 
                 </figure>
             </section>
             <section>
                 <h3>Case Study 2</h3>
+                <hr>
                 <p>In the initial design, the UI displayed the system-calculated benefit (SCB) as well as how that benefit would be paid-out through the year. </p>
                 <h4>First Iteration</h4>
                 <figure>
