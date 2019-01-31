@@ -32,7 +32,7 @@
                 <p><a href="http://hr.mit.edu/benefits/csp">Child Scholarship Plan (CSP)</a>
                      is a tuition reimbursement benefit MIT provides to eligible employees. The purpose of this project was to digitize the existing paper enrollment process and replace the outdated benefit management system (Filemaker).</p>
                 <figure>
-                    <img src='images/CSP/filemaker_screenshot.png'>
+                    <img src='Images/CSP/filemaker_screenshot.png'>
     <!--                 <figcaption> The original system was a Filemaker application</figcaption> -->
                 </figure>
             </section>
@@ -51,12 +51,12 @@
                     <p>Once I had a general understanding of how the benefit process worked, my next step was to make a list of the objects that needed to be represented in the system and their components, actions the user wants to take on each object, and potential states and statuses of each object. </p>
                     <p>This exercise not only reinforced my understanding of the system but helped surface things that were unclear. </p>
                     <figure>
-                        <img src='images/CSP/application_ooux.png'>
+                        <img src='Images/CSP/application_ooux.png'>
                         <!-- <figcaption> The main object of the system was the benefit application.</figcaption> -->
                     </figure>
                     <p>Next, I took the main objects (employee, student, application) and sketched out their relationships which served as a foundation for the design. From there there I began layering on additional views (detail-view, list-view) that corresponded to tasks the user needed to accomplish. </p>
                     <figure>
-                        <img src='images/CSP/system_sketch.jpg'>
+                        <img src='Images/CSP/system_sketch.jpg'>
                     </figure>
                 </section>
                 <section>
@@ -65,7 +65,7 @@
                     <p>When I joined the team, the project was behind schedule and there was pressure to quickly produce wireframes despite it being unclear how the new system would impact the existing business process. </p>
                     <p>Because I knew what the system objects were, I started by sketching out each object using the output from the previous exercise as a guideline. I treated each object as a stand-alone component; I didn’t know what the final configuration/arrangement of these components would be but I knew that no matter what, the component would be present in the system. </p>
                     <figure>
-                        <img src='images/CSP/claim_sketch.jpg'>
+                        <img src='Images/CSP/claim_sketch.jpg'>
                         <!-- <figcaption>I knew that there would be a “claim” object in the system.</figcaption> -->
                     </figure>
                     <p>This “inside-out method” proved to be an effective way of demonstrating that progress was being made without wireframing screens or knowing how everything was going to come together. </p>
@@ -75,7 +75,7 @@
                     <h3>Making Sense of it All</h3>
                     <p>While I focused on designing the admin-side of the system, my colleague was designing the employee-facing side. Though we were designing for different end users, the UIs were interconnected; a change on the employee-side could affect the admin-side and vice versa. Therefore, we had to make sure that our designs would properly accommodate for tasks that traversed both UIs. </p>
                     <figure>
-                        <img src='images/CSP/wireframe_walkthrough.jpg'>
+                        <img src='Images/CSP/wireframe_walkthrough.jpg'>
                         <!-- <figcaption>The back-end engineers and business analyst review the wireframe workflow.</figcaption> -->
                     </figure>
                     <section>
@@ -100,15 +100,15 @@
             
                     <figure>
                         <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
-                        <img src='images/CSP/claim_info_icon.png'>
+                        <img src='Images/CSP/claim_info_icon.png'>
                     </figure>
                     <p>However, as the project continued, I became aware of unique cases (e.g., non-USD tuition for foreign universities) that added complexity to the benefit calculation. A tooltip, which is usually used for short descriptions, was not the ideal format to communicate this complexity. </p>
                     <h4>Show, Don’t Tell</h4>
                     <p>In this design, the benefit explanation is stored in a vertical drawer that is accessible via the “show calculation” <span class="annotation">(2)</span> button. Rather than just provide a generic description of the calculation, the additional space allowed me to show each step of the calculation using actual values. By seeing every step, the user can be confident in the validity of the final value. </p>
                     <figure>
                         <i class="fa fa-check-circle fa-lg" aria-hidden="true"></i>
-                        <img src='images/CSP/claim_show_calculation.png'>
-                        <img src='images/CSP/calculation_slide_out.jpg'> 
+                        <img src='Images/CSP/claim_show_calculation.png'>
+                        <img src='Images/CSP/calculation_slide_out.jpg'> 
                     </figure>
                 </section>
                  <!-- Case Study 2 -->
@@ -119,7 +119,7 @@
                     <!-- <h4>First Iteration</h4> -->
                     <figure>
                         <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
-                        <img src='images/CSP/claim_system_total.png'>
+                        <img src='Images/CSP/claim_system_total.png'>
                     </figure>
                     <p><span class="inline_bold">Issue:  </span>Though the payment amounts <span class="annotation">(3)</span> were editable, the recommended SCB <span class="annotation">(4)</span> was not. The team was concerned that this would confuse the user and proposed that the SCB be automatically updated if the payment amounts were changed. When that proved to be confusing, they suggested using a warning banner to explain that the SCB did not take into account manual overrides. </p>
                     <p>These solutions assumed that the problem was the SCB. However, the problem was that the UI did not provide the information needed for the user to confidently override a system calculated value. </p>
@@ -128,7 +128,7 @@
                     <p>By showing both the system-calculated benefit side-by-side with the benefit amount based on a manual override, the user has a clearer picture</p>
                     <figure>
                         <i class="fa fa-check-circle fa-lg" aria-hidden="true"></i>
-                        <img src='images/CSP/claim_total_sidebyside.png'>
+                        <img src='Images/CSP/claim_total_sidebyside.png'>
                         <figcaption>Each column has an active state which visually highlights the relationship between the parts and the total while also separating the manual vs. calculated values.</figcaption>
                     </figure>
                 </section>
@@ -139,7 +139,7 @@
                     <h4>First Iteration</h4>
                     <p>Since most of the work associated with processing a change form was offloaded onto the system, there wasn’t much difference between how an administrator processed a new form vs. a change form. Therefore, the claim section of a change form was based on the new application form.</p>
                     <figure>
-                        <img src='images/CSP/claim_change_initial.png'>
+                        <img src='Images/CSP/claim_change_initial.png'>
                     </figure>
                     <p>However, by approving a “change form”, the administrator was not only creating a new payment but also cancelling any previously scheduled payments. This consequence was not visible in the UI and therefore a potential source of confusion for anyone unfamiliar with the system. </p>
                     <h4>Iteration 2</h4>
@@ -150,7 +150,7 @@
                     </li></ul>
                     <p>In addition, showing both the original and changed payments makes it clear that these claims are associated with the same benefit.</p>
                     <figure>
-                        <img src='images/CSP/claim_color_coded.png'>
+                        <img src='Images/CSP/claim_color_coded.png'>
                     </figure>
                 </section>
             </section>
