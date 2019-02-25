@@ -28,10 +28,6 @@ figcaption {
   font-size: 16px;
   color: #4A4A4A; }
 
-article img {
-  width: 700px;
-  object-fit: contain; }
-
 article > section {
   margin: 50px 0; }
 
@@ -46,7 +42,7 @@ h2 {
 h3 {
   font-size: 22px;
   margin-bottom: 18px;
-  margin-top: 2px; }
+  margin-top: 4px; }
 
 h4 {
   font-size: 24px;
@@ -59,12 +55,9 @@ hr {
 
 .article--body {
   width: 700px;
-  margin: 0 60px; }
+  margin: 0 auto; }
 
 .article--container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   margin-top: 100px; }
 
 .article--details {
@@ -124,3 +117,15 @@ dd {
 
 dd:last-child {
   margin-bottom: 0; }
+
+img {
+  display: block;
+  width: 700px; }
+
+.break-out {
+  width: min-content;
+  margin-left: calc((1130px - 100vw) / 2); }
+
+.break-out img {
+  display: block;
+  width: auto; }

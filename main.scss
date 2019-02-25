@@ -1,7 +1,6 @@
 $primary-color: #000;
 $red-pink: #FF1644;
-
-
+$container-width: 700px;
 
 * {
     box-sizing: border-box;
@@ -23,7 +22,6 @@ h1, h2, h3, h4, .article--details {
 
 body {
     font-family: 'Open Sans', sans-serif;
-
 }
 
 p {
@@ -44,10 +42,10 @@ figcaption {
     color: #4A4A4A;
 }
 
-article img {
-    width: 700px;
-    object-fit: contain;
-}
+// article img {
+//     width: 700px;
+//     object-fit: contain;
+// }
 
 article > section {
     margin: 50px 0;
@@ -67,7 +65,7 @@ h2 {
 h3 {
     font-size: 22px;
     margin-bottom: 18px;
-    margin-top: 2px;
+    margin-top: 4px;
 
 }
 
@@ -84,14 +82,11 @@ hr {
 }
 
 .article--body {
-    width: 700px;
-    margin: 0 60px;
+    width: $container-width;
+    margin: 0 auto;
 }
 
 .article--container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     margin-top: 100px;
 }
 
@@ -161,8 +156,6 @@ article section {
     margin-bottom: 40px;
 }
 
-
-
 dd {
     margin-inline-start: 0; //overwrite default value
     margin-bottom: 20px; 
@@ -170,4 +163,20 @@ dd {
 
 dd:last-child {
     margin-bottom: 0;
+}
+
+img {
+    display: block;
+    width: $container-width;
+}
+
+.break-out {
+    width: min-content;
+        margin-left: calc((1130px - 100vw) / 2); 
+        //@todo 1130px is avg size of large wireframes. temp solution. look into CSS grid
+}
+
+.break-out img{
+    display: block;
+    width: auto;
 }
