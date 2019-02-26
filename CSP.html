@@ -21,11 +21,22 @@
                 <li>My Role</li>
                 <li>Process</li>
                 <li>Deliverables</li>
-            </ul> -->
-        </nav>
+            </ul>
+        </nav> -->
    
         <div class="article--body">
-                    <h1 class="article--title">Child Scholarship Plan</h1>
+             <h1 class="article--title">Child Scholarship Plan</h1>
+           <!--  <section>
+                <div class="col_50">
+                    <div class="min-content">
+                        <p>client</p>
+                        <p>roles</p>
+                        <p>deliverables</p>
+                    </div><div class="pl-20"></div>
+                </div><div class="col_50">
+                    test 2
+                </div>         
+            </section> -->
             <section>
                 <span class="divider"></span>
                 <h2>Background</h2>
@@ -99,36 +110,36 @@
                     <p>Based on the end user’s lengthy experience with administering benefits, my initial design relegated the calculation explanation to an information icon <span class="annotation">(1)</span>. </p>
             
                     <figure class="break-out">
-                        <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
-                        <img src='Images/CSP/claim_info_icon_w1130.png'>
+                        <!-- <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i> -->
+                        <img src='Images/CSP/claim_info_icon_w1042.png'>
                     </figure>
                     <p>However, as the project continued, I became aware of unique cases (e.g., non-USD tuition for foreign universities) that added complexity to the benefit calculation. A tooltip, which is usually used for short descriptions, was not the ideal format to communicate this complexity. </p>
                     <h4>Show, Don’t Tell</h4>
                     <p>In this design, the benefit explanation is stored in a vertical drawer that is accessible via the “show calculation” <span class="annotation">(2)</span> button. Rather than just provide a generic description of the calculation, the additional space allowed me to show each step of the calculation using actual values. By seeing every step, the user can be confident in the validity of the final value. </p>
                     <figure class="break-out">
-                        <i class="fa fa-check-circle fa-lg" aria-hidden="true"></i>
-                        <img src='Images/CSP/claim_show_calculation.png'>
+                        <img src='Images/CSP/claim_show_calculation_w1042.png'>
+                    </figure>
+                    <figure class="break-out_w395">
                         <img src='Images/CSP/calculation_slide_out.jpg'> 
                     </figure>
+
                 </section>
                  <!-- Case Study 2 -->
                 <section>
                     <span class="sub-section-name">Case Study 2</span>
                     <h3>Side-By-Side Comparison</h3>
                     <p>In the initial design, the UI displayed the system-calculated benefit (SCB) as well as how that benefit would be paid-out through the year. </p>
-                    <!-- <h4>First Iteration</h4> -->
                     <figure class="break-out">
-                        <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
-                        <img src='Images/CSP/claim_system_total.png'>
+                        <img src='Images/CSP/claim_system_total_w1042.png'>
                     </figure>
                     <p><span class="inline_bold">Issue:  </span>Though the payment amounts <span class="annotation">(3)</span> were editable, the recommended SCB <span class="annotation">(4)</span> was not. The team was concerned that this would confuse the user and proposed that the SCB be automatically updated if the payment amounts were changed. When that proved to be confusing, they suggested using a warning banner to explain that the SCB did not take into account manual overrides. </p>
                     <p>These solutions assumed that the problem was the SCB. However, the problem was that the UI did not provide the information needed for the user to confidently override a system calculated value. </p>
 <!--                     <h4>Side-By-Side Comparison</h4> -->
                     <p><span class="inline_bold">Solution:  </span>In order to clearly communicate the consequence of updating an individual payment on the total sum, a second column tallying the manual inputted values was included alongside the system-calculated values. </p>
                     <p>By showing both the system-calculated benefit side-by-side with the benefit amount based on a manual override, the user has a clearer picture</p>
-                    <figure class="break-out">
-                        <img src='Images/CSP/claim_total_sidebyside.png'>
-                        <figcaption><i class="fa fa-check-circle fa-lg" aria-hidden="true"></i> Each column has an active state which visually highlights the relationship between the parts and the total while also separating the manual vs. calculated values.</figcaption>
+                    <figure class="break-out_w1142">
+                        <img src='Images/CSP/claim_total_sidebyside_w1142.png'>
+                        <figcaption>Each column has an active state which visually highlights the relationship between the parts and the total while also separating the manual vs. calculated values.</figcaption>
                     </figure>
                 </section>
                 <section>
@@ -138,17 +149,17 @@
                     <p>Another use case that needed to be addressed was if a benefit recipient changed schools.  Because the existing system did not allow for changes to approved applications, payments had to be manually updated in the database. The team envisioned that once a “change form” was approved in the new system, payments would be automatically updated. </p>
                     <p>Since most of the work associated with processing a change form was offloaded onto the system, there wasn’t much difference between how an administrator processed a new form vs. a change form. Therefore, the claim section of a change form was based on the new application form.</p>
                     <figure class="break-out">
-                        <img src='Images/CSP/claim_change_initial.png'>
+                        <img src='Images/CSP/claim_change_initial_w1042.png'>
                     </figure>
-                    <span class="inline_bold">Issue: </span><p>However, by approving a “change form”, the administrator was not only creating a new payment but also cancelling any previously scheduled payments. This consequence was not visible in the UI and therefore a potential source of confusion for anyone unfamiliar with the system. </p>
-                    <span class="inline_bold">Solution: </span><p>This design better facilitates decision-making by indicating the direct and indirect consequences of approving a form. In the example below, color is used to indicate what will happen to each claim payment if this application is approved. </p>
-                    <ul><li>	White <span class="annotation">(5)</span> : This claim has already been paid and will be unaffected.
+                    <p><span class="inline_bold">Issue: </span>However, by approving a “change form”, the administrator was not only creating a new payment but also cancelling any previously scheduled payments. This consequence was not visible in the UI and therefore a potential source of confusion for anyone unfamiliar with the system. </p>
+                    <p><span class="inline_bold">Solution: </span>This design better facilitates decision-making by indicating the direct and indirect consequences of approving a form. In the example below, color is used to indicate what will happen to each claim payment if this application is approved. </p>
+                    <ul class="restyle-list"><li>	White <span class="annotation">(5)</span> : This claim has already been paid and will be unaffected.
                     </li><li>	Red <span class="annotation">(6)</span> : This payment will be canceled.
                     </li><li>	Green <span class="annotation">(7)</span> : This payment will be added.
                     </li></ul>
                     <p>In addition, showing both the original and changed payments makes it clear that these claims are associated with the same benefit.</p>
                     <figure class="break-out">
-                        <img src='Images/CSP/claim_color_coded.png'>
+                        <img src='Images/CSP/claim_color_coded_w1042.png'>
                     </figure>
                 </section>
             </section>
