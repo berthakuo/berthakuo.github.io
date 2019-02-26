@@ -155,3 +155,6 @@ img {
   display: inline-block;
   width: 50%;
   border: black 1px solid; }
+
+.highlight {
+  background-color: yellow; }
