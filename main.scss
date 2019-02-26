@@ -40,6 +40,7 @@ figcaption {
     font-style: italic;
     font-size: 16px;
     color: #4A4A4A;
+    padding-top: 8px;
 }
 
 // article img {
@@ -172,11 +173,46 @@ img {
 
 .break-out {
     width: min-content;
-        margin-left: calc((1130px - 100vw) / 2); 
-        //@todo 1130px is avg size of large wireframes. temp solution. look into CSS grid
+        margin-left: calc((700px - 1042px) / 2); 
+        //@todo temp solution based on imge size. look into CSS grid
+}
+
+.break-out_w1142 {
+    width: min-content;
+        margin-left: calc((700px - 1142px) / 2); 
+        //@todo temp solution based on imge size. look into CSS grid
+}
+
+.break-out_w395 {
+    width: min-content;
+        margin-left: calc((700px - 395px) / 2); 
+        //@todo temp solution based on imge size. look into CSS grid
 }
 
 .break-out img{
     display: block;
     width: auto;
+}
+
+.break-out_w1142 img{
+    display: block;
+    width: auto;
+}
+
+.break-out_w395 img{
+    display: block;
+    width: auto;
+}
+//@todo need to refactor. shouldn't have to do this for every different image size
+
+.restyle-list {
+    list-style: none;
+    line-height: 2;
+}
+//@todo need to refactor. styles the list in the Case Study 3 
+
+.col_50 {
+    display: inline-block;
+    width:50%;
+    border: black 1px solid;
 }

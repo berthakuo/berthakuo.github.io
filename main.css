@@ -26,7 +26,8 @@ figure {
 figcaption {
   font-style: italic;
   font-size: 16px;
-  color: #4A4A4A; }
+  color: #4A4A4A;
+  padding-top: 8px; }
 
 article > section {
   margin: 50px 0; }
@@ -124,8 +125,33 @@ img {
 
 .break-out {
   width: min-content;
-  margin-left: calc((1130px - 100vw) / 2); }
+  margin-left: calc((700px - 1042px) / 2); }
+
+.break-out_w1142 {
+  width: min-content;
+  margin-left: calc((700px - 1142px) / 2); }
+
+.break-out_w395 {
+  width: min-content;
+  margin-left: calc((700px - 395px) / 2); }
 
 .break-out img {
   display: block;
   width: auto; }
+
+.break-out_w1142 img {
+  display: block;
+  width: auto; }
+
+.break-out_w395 img {
+  display: block;
+  width: auto; }
+
+.restyle-list {
+  list-style: none;
+  line-height: 2; }
+
+.col_50 {
+  display: inline-block;
+  width: 50%;
+  border: black 1px solid; }
