@@ -84,21 +84,18 @@ hr {
   width: 700px;
   margin: 0 auto; }
 
-.article--container {
-  margin-top: 100px; }
-
 .article--details {
-  padding: 15px 20px;
   background-color: #FFF1F6;
-  margin-top: 125px;
-  border-radius: 2px; }
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row; }
 
-.article--details dt {
+.meta-data {
+  padding: 10px 20px; }
+
+.meta-data span {
   color: #FF1644;
   font-size: 15px; }
-
-.article--details dl {
-  margin: 0; }
 
 .article--nav ul {
   list-style-type: none;

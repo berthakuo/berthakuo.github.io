@@ -1,7 +1,7 @@
 $primary-color: #000;
 $red-pink: #FF1644;
 $container-width: 700px;
-$navbar: 40px;
+$navbar-height: 40px;
 
 
 * {
@@ -23,7 +23,7 @@ a:hover {
     text-transform: uppercase;
     font-size: 14px;
     color: #344955;
-        margin-top: 30px;
+    margin-top: 30px;
 }
 
 .intro {
@@ -66,7 +66,7 @@ figcaption {
 }
 
 .navbar {
-    height: $navbar;
+    height: $navbar-height;
 }
 
 .logo {
@@ -119,26 +119,26 @@ hr {
     margin: 0 auto;
 }
 
-.article--container {
-    margin-top: 100px;
-}
+// .article--container {
+//     margin-top: $navbar-height;
+// }
 
 .article--details {
-    padding: 15px 20px;
     background-color: #FFF1F6;
-    margin-top: 125px;     //@todo need more permanent fix
     border-radius: 2px;
+    display: flex;
+    flex-direction: row;
 }
 
-.article--details dt {
+.meta-data {
+    padding: 10px 20px;
+    // flex-grow: 1;
+}
+
+.meta-data span {
     color: $red-pink;
     font-size: 15px;
 }
-
-.article--details dl {
-    margin: 0;   //overwrite default value
-}
-
 
 .article--nav ul {
     list-style-type: none;
